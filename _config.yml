@@ -1,0 +1,27 @@
+title: "WatchWala"
+description: "Your Professional Watch Store - Buy Best Watches Online"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://devendrahub.github.io/WatchWala" # your GitHub Pages URL
+theme: minima
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+defaults:
+  -
+    scope:
+      path: ""
+      type: products
+    values:
+      layout: product
+      image: "/assets/images/default-watch.jpg"
+      video: ""
+      price: ""
+      description: ""
+navigation:
+  - title: Home
+    url: /
+  - title: Products
+    url: /products/
+  - title: About
+    url: /about/
